@@ -13,8 +13,7 @@ export default {
             console.log('Searching...');
             let searchMovie = this.store.params.query
             console.log(searchMovie);
-        },
-        callApi(url) {
+            const url = `${this.store.API_URL}&query=${searchMovie}`
             axios.get(url)
                 .then(response => {
                     console.log(response.data.results);
@@ -23,6 +22,15 @@ export default {
                 .catch(err => {
                     console.error(err);
                     this.store.error = err.message
+                })
+        },
+        callApi(url) {
+            axios.get(url)
+                .then(response => {
+                    console.log(response.data.results);
+                })
+                .catch(err => {
+                    console.error(err);
                 })
         }
     },
