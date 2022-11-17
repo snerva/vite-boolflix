@@ -15,17 +15,26 @@ export default {
         <div class="container">
             <div class="movies">
                 <div class="row row-cols-5 p-3 g-3 text-center">
-                    <div class="col" v-for="movie in store.movies">
-                        <ul class="bg-light">
-                            <li>{{ movie.title }} {{ movie.name }}</li>
-                            <li>{{ movie.original_title }} {{ movie.original_name }}</li>
-                            <li>
+                    <div class="col movie_card" v-for="movie in store.movies">
+
+                        <div class="card_info  p-3 rounded-1">
+                            <div class="title text-start">
+                                <h4>{{ movie.title }} {{ movie.name }}</h4>
+                            </div>
+                            <div class="contents p-2 text-center">
+                                <p>{{ movie.original_title }} {{ movie.original_name }}</p>
+                                <p>{{ movie.media_type }}</p>
+                            </div>
+                            <div class="info">
                                 <img class="img-fluid flag_icon" :src="store.displayFlag(movie.original_language)"
                                     alt="">
-                            </li>
-                            <li>{{ store.roundUpVote(movie.vote_average) }}</li>
-                        </ul>
-                        <div class="cover">
+                                <div class="vote p-3">
+                                    {{ store.roundUpVote(movie.vote_average) }}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cover rounded-1 ">
                             <img class="img-fluid" :src="`${store.thumb}/${movie.poster_path}`" alt="">
                         </div>
                     </div>

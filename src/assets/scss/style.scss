@@ -1,14 +1,30 @@
 @use '../../../node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
-    background-color: #323436;
+    background-color: #161515;
+    color: white;
 }
 
 header {
-
     .container {
-        width: 90%;
         margin: 0 auto;
+
+        .logo h2 {
+            color: rgb(255, 0, 0);
+        }
+
+        .search {
+            button {
+                color: white;
+            }
+
+            input {
+
+                background: none;
+                color: white;
+            }
+
+        }
     }
 }
 
@@ -20,6 +36,21 @@ main {
         .movies {
             .flag_icon {
                 height: 25px;
+            }
+
+            .movie_card {
+                position: relative;
+            }
+
+            .card_info {
+                position: absolute;
+                display: none;
+                cursor: pointer;
+            }
+
+            &:hover {
+                display: inline-block;
+
             }
         }
     }
