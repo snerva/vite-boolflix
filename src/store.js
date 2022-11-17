@@ -21,7 +21,7 @@ export const store = reactive({
         zh: 'https://cdn-icons-png.flaticon.com/512/197/197375.png',
         w: 'https://cdn-icons-png.flaticon.com/512/2115/2115334.png'
     },
-    thumb: 'https://image.tmdb.org/t/p/w342/',
+    thumb: 'https://image.tmdb.org/t/p/w342',
 
     searchThisMovie() {
         console.log('Searching...');
@@ -37,24 +37,18 @@ export const store = reactive({
                 console.error(err);
                 this.error = err.message
             })
+
     },
     displayFlag(language) {
-        if (language === 'de') {
-            return store.languages.de
-        } else if (language === 'en') {
-            return store.languages.en
-        } else if (language === 'es') {
-            return store.languages.es
-        } else if (language === 'fr') {
-            return store.languages.fr
-        } else if (language === 'it') {
-            return store.languages.it
-        } else if (language === 'ja') {
-            return store.languages.ja
-        } else if (language === 'zh') {
-            return store.languages.zh
-        } else {
+        const path = this.languages[language];
+        if (!path) {
             return store.languages.w
+        } else {
+            return store.languages[language]
         }
+
+    },
+    roundUpVote(n) {
+        return Math.ceil(n)
     }
 })

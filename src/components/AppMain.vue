@@ -23,10 +23,10 @@ export default {
                                 <img class="img-fluid flag_icon" :src="store.displayFlag(movie.original_language)"
                                     alt="">
                             </li>
-                            <li>{{ movie.vote_average }}</li>
+                            <li>{{ store.roundUpVote(movie.vote_average) }}</li>
                         </ul>
                         <div class="cover">
-                            <img src="" alt="">
+                            <img class="img-fluid" :src="`${store.thumb}/${movie.poster_path}`" alt="">
                         </div>
                     </div>
                 </div>
