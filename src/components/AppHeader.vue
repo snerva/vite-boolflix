@@ -46,8 +46,40 @@ export default {
                     <a href="">Bambini</a>
                 </div>
                 <div class="profile">
-                    <div class="icon_user mx-3">
-                        <img class="img-fluid rounded-4" src="../../public/img/icon_spyro.png" alt="">
+                    <div class="icon_user mx-3 dropbtn">
+                        <img class="img-fluid rounded-4" src="../../img/icon_spyro.png" alt="">
+                    </div>
+                    <div class="drop_content mt-2 py-3 px-2">
+                        <section class="d-flex align-items-center p-2">
+                            <img class="img-fluid rounded-4" src="../../img/icon_boss.png" alt="">
+                            <a href="#">Baby Boss</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <img class="img-fluid rounded-4" src="../../img/icon_winona.png" alt="">
+                            <a href="#">Winona</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <img class="img-fluid rounded-4" src="../../img/icon_kids.png" alt="">
+                            <a href="#">Bambini</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <font-awesome-icon icon="fa-solid fa-pencil" size="2xl" transform="right-5" />
+                            <a class="settings" href="#">Gestisci i profili</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <font-awesome-icon icon="fa-regular fa-share-from-square" size="2xl" transform="right-5" />
+                            <a class="settings" href="#">Trasferisci profilo</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <font-awesome-icon icon="fa-regular fa-user" size="2xl" transform="right-5" />
+                            <a class="settings" href="#">Account</a>
+                        </section>
+                        <section class="d-flex align-items-center p-2">
+                            <font-awesome-icon icon="fa-regular fa-circle-question" size="2xl" transform="right-5" />
+                            <a class="settings" href="#">Centro assistenza</a>
+                        </section>
+                        <hr class="grey_line">
+                        <a class="sign_out" href="#">Esci da Netflix</a>
                     </div>
                 </div>
             </div>
