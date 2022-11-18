@@ -45,6 +45,20 @@ header {
                 cursor: pointer;
             }
 
+            .kids a {
+                margin: 0 1rem;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
+            .icon_user {
+                width: 63px;
+            }
+
         }
     }
 }

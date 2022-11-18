@@ -42,8 +42,13 @@ export default {
                 <div class="notifying">
                     <font-awesome-icon icon="fa-regular fa-bell" />
                 </div>
+                <div class="kids">
+                    <a href="">Bambini</a>
+                </div>
                 <div class="profile">
-
+                    <div class="icon_user mx-3">
+                        <img class="img-fluid rounded-4" src="../../public/img/icon_spyro.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>

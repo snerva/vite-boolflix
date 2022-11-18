@@ -22,7 +22,7 @@ export default {
                                 <h5>{{ movie.title }} {{ movie.name }}</h5>
                             </div>
                             <div class="contents">
-                                <p>{{ movie.original_title }} {{ movie.original_name }}</p>
+                                <p><small>{{ movie.original_title }} {{ movie.original_name }}</small></p>
                                 <p class="overview"><small>{{ movie.overview }}</small></p>
                             </div>
                             <div class="info">
