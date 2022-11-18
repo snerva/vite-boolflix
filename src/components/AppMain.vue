@@ -14,14 +14,14 @@ export default {
     <main>
         <div class="container">
             <div class="movies">
-                <div class="row row-cols-5 p-3 g-3 text-center">
+                <div class="row row-cols-6 p-3 g-3 text-center">
                     <div class="col movie_card" v-for="movie in store.movies">
 
-                        <div class="card_info  p-3 rounded-1">
-                            <div class="title text-start">
+                        <div class="card_info  p-3">
+                            <div class="title">
                                 <h4>{{ movie.title }} {{ movie.name }}</h4>
                             </div>
-                            <div class="contents p-2 text-center">
+                            <div class="contents p-2">
                                 <p>{{ movie.original_title }} {{ movie.original_name }}</p>
                                 <p>{{ movie.media_type }}</p>
                             </div>

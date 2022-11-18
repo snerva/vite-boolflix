@@ -6,14 +6,27 @@ body {
 }
 
 header {
-    .container {
-        margin: 0 auto;
+    .navbar {
 
-        .logo h2 {
-            color: rgb(255, 0, 0);
+        .navbar_left {
+            .logo h2 {
+                color: rgb(255, 0, 0);
+            }
+
+            .menu a {
+                margin: 0 1rem;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+
         }
 
-        .search {
+
+        .navbar_right {
             button {
                 color: white;
             }
@@ -40,18 +53,24 @@ main {
 
             .movie_card {
                 position: relative;
+
+                .card_info {
+                    text-align: center;
+                    position: absolute;
+                    display: none;
+
+
+                    &:hover {
+                        display: block;
+                        cursor: pointer;
+                    }
+                }
+
+
             }
 
-            .card_info {
-                position: absolute;
-                display: none;
-                cursor: pointer;
-            }
 
-            &:hover {
-                display: inline-block;
 
-            }
         }
     }
 }
