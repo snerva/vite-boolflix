@@ -19,16 +19,16 @@ export default {
 
                         <div class="card_info  p-3">
                             <div class="title">
-                                <h4>{{ movie.title }} {{ movie.name }}</h4>
+                                <h5>{{ movie.title }} {{ movie.name }}</h5>
                             </div>
-                            <div class="contents p-2">
+                            <div class="contents">
                                 <p>{{ movie.original_title }} {{ movie.original_name }}</p>
-                                <p>{{ movie.media_type }}</p>
+                                <p class="overview"><small>{{ movie.overview }}</small></p>
                             </div>
                             <div class="info">
                                 <img class="img-fluid flag_icon" :src="store.displayFlag(movie.original_language)"
                                     alt="">
-                                <div class="vote p-3">
+                                <div class="vote p-1">
                                     {{ store.roundUpVote(movie.vote_average) }}
                                 </div>
                             </div>

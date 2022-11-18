@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    .navbar {
+    .header_navbar {
 
         .navbar_left {
             .logo h2 {
@@ -27,10 +27,6 @@ header {
 
 
         .navbar_right {
-            button {
-                color: white;
-            }
-
             input {
 
                 background: none;
@@ -54,18 +50,27 @@ main {
             .movie_card {
                 position: relative;
 
-                .card_info {
-                    text-align: center;
-                    position: absolute;
-                    display: none;
-
-
-                    &:hover {
+                &:hover {
+                    .card_info {
                         display: block;
-                        cursor: pointer;
+                    }
+
+                    .cover {
+                        display: none;
                     }
                 }
 
+                .card_info {
+                    position: absolute;
+                    display: none;
+
+                    .overview {
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        -webkit-line-clamp: 3;
+                        display: -webkit-box;
+                    }
+                }
 
             }
 

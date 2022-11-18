@@ -13,8 +13,8 @@ export default {
 
 <template>
     <header>
-        <div class="navbar d-flex justify-content-between align-items-center px-4 py-3">
-            <div class="navbar_left d-flex align-items-center px-4">
+        <div class="header_navbar d-flex justify-content-between align-items-center px-4 py-3">
+            <div class="navbar_left d-flex align-items-center">
                 <div class="logo px-4">
                     <h2>BOOLFLIX</h2>
                 </div>
@@ -29,11 +29,15 @@ export default {
                 </div>
 
             </div>
-            <div class="navbar_right input-group input-group-sm m-3 w-25 px-4">
-                <button class="btn border boredr-white border-end-0" type="button" @click="store.searchThisMovie">Search
-                </button>
-                <input type="text" class="form-control border border-white border-start-0" placeholder="Cerca"
-                    v-model="store.params.query" @keyup.enter="store.searchThisMovie">
+            <div class="navbar_right ">
+                <div class="input-group input-group-sm m-3 px-4">
+                    <button class="btn border boredr-white border-end-0" type="button"
+                        @click="store.searchThisMovie">Search
+                    </button>
+                    <input type="text" class="form-control border border-white border-start-0" placeholder="Cerca"
+                        v-model="store.params.query" @keyup.enter="store.searchThisMovie">
+
+                </div>
 
             </div>
         </div>
