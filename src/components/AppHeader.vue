@@ -29,16 +29,22 @@ export default {
                 </div>
 
             </div>
-            <div class="navbar_right ">
-                <div class="input-group input-group-sm m-3 px-4">
-                    <button class="btn border boredr-white border-end-0" type="button"
-                        @click="store.searchThisMovie">Search
+            <div class="navbar_right d-flex align-items-center">
+                <div class="search input-group input-group-sm m-3 px-2">
+                    <button class="search_btn btn border border-white border-end-0" type="button"
+                        @click="store.searchThisMovie">
+                        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
                     </button>
                     <input type="text" class="form-control border border-white border-start-0" placeholder="Cerca"
                         v-model="store.params.query" @keyup.enter="store.searchThisMovie">
 
                 </div>
+                <div class="notifying">
+                    <font-awesome-icon icon="fa-regular fa-bell" />
+                </div>
+                <div class="profile">
 
+                </div>
             </div>
         </div>
     </header>

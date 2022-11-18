@@ -27,10 +27,22 @@ header {
 
 
         .navbar_right {
-            input {
+            .search {
+                .search_btn {
+                    color: white;
+                    font-size: large;
+                }
 
-                background: none;
-                color: white;
+                input {
+                    background: none;
+                    color: white;
+                }
+
+            }
+
+            .notifying {
+                font-size: larger;
+                cursor: pointer;
             }
 
         }
